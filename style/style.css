@@ -1,0 +1,124 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --green: #009579;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+}
+
+#check:checked ~ .reg {
+  display: block;
+}
+
+#check:checked ~ .login {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.container {
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 430px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+}
+.container .reg {
+  display: none;
+}
+.container .form {
+  padding: 2rem;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .form header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.container .form form input {
+  width: 100%;
+  height: 60px;
+  padding: 0px 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+}
+.container .form form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.container .form form .container-pass {
+  width: 100%;
+  position: relative;
+}
+.container .form form .container-pass img {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.container .form form a {
+  font-size: 16px;
+  color: var(--green);
+  text-decoration: none;
+}
+.container .form form a:hover {
+  text-decoration: underline;
+}
+.container .form form .button {
+  color: var(--white);
+  background-color: var(--green);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.container .form form .button:hover {
+  background-color: #006653;
+}
+.container .form .sign-up {
+  justify-content: center;
+  font-size: 17px;
+}
+.container .form .sign-up span {
+  text-align: center;
+}
+.container .form .sign-up label {
+  margin-top: 5px;
+  color: var(--green);
+  cursor: pointer;
+}
+.container .form .sign-up label:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

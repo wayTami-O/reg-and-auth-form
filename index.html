@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./mobile/mobile.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Вход</header>
+            <form action="#">
+                <input type="email" required placeholder="Введите вашу почту">
+                <div class="container-pass">
+                    <input type="password" id="password-input" placeholder="Введите пароль" name="password" required maxlength="16" minlength="6">
+                    <img src="./img/eye-slash-svgrepo-com.svg" alt="" onclick="return show_hide_password('password-input');">
+                </div>
+                <a href="#">Забыли пароль</a>
+                <input type="button" class="button" value="Войти">
+            </form>
+            <div class="sign-up">
+                <span class="text-sign-up">У вас нет аккаунта?<br><label for="check">Зарегистрироваться</label></span>
+            </div>
+        </div>
+        <div class="reg form">
+            <header>Зарегистрироваться</header>
+            <form action="#">
+                <input type="email" placeholder="Введите вашу почту">
+                <div class="container-pass">
+                    <input type="password" id="password-input2" placeholder="Введите пароль" name="password" required maxlength="16" minlength="6">
+                    <img src="./img/eye-slash-svgrepo-com.svg" alt="" onclick="return show_hide_password('password-input2');">
+                </div>
+                <div class="container-pass">
+                    <input type="password" id="password-input3" placeholder="Введите пароль" name="password" required maxlength="16" minlength="6">
+                    <img src="./img/eye-slash-svgrepo-com.svg" alt="" onclick="return show_hide_password('password-input3');">
+                </div>
+                <input type="button" class="button" value="Зарегистрироваться">
+            </form>
+            <div class="sign-up">
+                <span class="text-sign-up">У вас уже есть аккаунт?<br><label for="check">Войти</label></span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

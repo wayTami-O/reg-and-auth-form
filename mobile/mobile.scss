@@ -1,0 +1,107 @@
+@media screen and (max-width: 450px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    :root {
+        --green: #009579;
+        --white: #fff;
+    }
+
+    div, span, input, a {
+        font-size: 12px;
+    }
+
+    body {
+        top: 20%;
+        
+        min-width: 300px;
+        min-height: 400px;
+    }
+    .container {
+        max-width: 300px;
+        .form {
+            padding: 1rem;
+            header {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            form {
+                input {
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                    padding: 4px;
+                    height: 33px;
+                }
+                .container-pass {
+                    img {
+                        top: 9px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                a {
+                    font-size: 10px;
+                }
+                .button {
+                    margin-top: 0.5rem;
+                    font-size: 12px;
+                }
+            }
+        }
+        .sign-up {
+            span {
+                font-style: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 280px){
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    :root {
+        --green: #009579;
+        --white: #fff;
+    }
+
+    body {
+        max-width: 280px;
+        min-height: 320px;
+    }
+    .container {
+        max-width: 280px;
+        .form {
+            padding: 0.3rem;
+            header {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            form {
+                input {
+                    margin-bottom: 3px;
+                    font-size: 10px;
+                    padding: 4px;
+                    height: 19px;
+                }
+                .container-pass {
+                    img {
+                        top: 7px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                a {
+                    font-size: 8px;
+                }
+                .button {
+                    margin-top: 0.3rem;
+                    font-size: 10px;
+                }
+            }
+        }
+        .sign-up {
+            span {
+                font-style: 8px;
+            }
+        }
+    }
+}
